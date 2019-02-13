@@ -64,9 +64,9 @@ $(function() {
 		items: 4,
 		loop: true,
 		autoplay: true,
-		margin: 30,
+		margin: 20,
 		nav: true,
-		stagePadding: 60,
+		stagePadding: 10,
 		navText: [ "<img src='img/prev.png'>", "<img src='img/next.png'>" ],
 		responsive: {
 			0: {
@@ -87,11 +87,11 @@ $(function() {
 			},
 			1200: {
 				items: 3,
-				stagePadding: 60
+				stagePadding: 0
 			},
 			1440: {
 				items: 4,
-				stagePadding: 60
+				stagePadding: 0
 			}
 		}
 	});

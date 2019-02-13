@@ -919,11 +919,46 @@ th {
       display: none; } }
 
 .banner-area {
-  background: url(../img/kursus/kursus-banner.png) no-repeat ;
-  background-position: left;
+  background: url(../img/kursus/kursus-banner.png) no-repeat center center fixed;
   min-height: 100vh;
-  max-width: 100%;}
+  background-size: cover;
+  background-color: #f2f2f2;}
 
+.banner-left {
+  text-align: left;
+  min-height: 80%;
+  min-width: 400px;
+  position: absolute;
+  left: 0px;
+  margin-top: 20px;
+  #background-color: green;
+  padding: 20px;
+  padding-top: 20px;
+}
+
+.banner-left h4 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-bottom: 15px;
+}
+
+.banner-left tr {
+	#border: 1px solid black;
+	color: black;
+	font-size: 18px;
+}
+
+.banner-left tr:hover {
+	background-color: #f2f2f2;
+}
+
+.banner-left td {
+	padding: 12px;
+}
+
+.banner-left .selection {
+	width: 300px;
+}
+  
 .banner-right {
   margin-top: 200px;
   text-align: right; }
@@ -1020,6 +1055,12 @@ th {
     margin-bottom: 20px; }
   .feature-item p {
     margin-bottom: 0px; }
+
+.carousel-course {
+  margin-left: 200px;
+  position: center;
+  top: 50%;
+}	
 
 /* Start Popular Courses Area
 =========================================================================================== */
