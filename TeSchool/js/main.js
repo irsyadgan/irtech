@@ -67,7 +67,7 @@ $(function() {
 		margin: 20,
 		nav: true,
 		stagePadding: 10,
-		navText: [ "<img src='img/prev.png'>", "<img src='img/next.png'>" ],
+		navText: [ "<img src='img/kursus/kursus-prev-button.png'>", "<img src='img/kursus/kursus-next-button.png'>" ],
 		responsive: {
 			0: {
 				items: 1,
@@ -87,11 +87,11 @@ $(function() {
 			},
 			1200: {
 				items: 3,
-				stagePadding: 0
+				stagePadding: 60
 			},
 			1440: {
-				items: 4,
-				stagePadding: 0
+				items: 3,
+				stagePadding: 60
 			}
 		}
 	});
