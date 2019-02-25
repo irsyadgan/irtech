@@ -1,0 +1,163 @@
+.font-judul{
+	font-family: "Fira Sans", sans-serif;);
+}
+/*Navbar==========================================*/
+.navbar-margin {
+	margin-top: -25px;
+}
+
+.navbar-header {
+	background: url(../img/kursus/kursus-header.png) no-repeat center;
+}
+
+.logo {
+	height: 50px;
+}
+
+.navbar-nav li a:hover {
+	background-color: #000066;
+	opacity: 0.8;
+}
+
+.navbar-nav .search:hover {
+    background-color: #000066;
+    opacity: 0.8;
+	border-radius: 50%;
+}
+	
+.navbar-nav .dropdown .dropdown-item:hover {
+	background-color: #f2f2f2;
+}
+
+/*Banner==========================================*/
+.banner-area-course {
+	background-size: cover;
+	background-color: #f2f2f2;
+	min-height: 100vh;
+}
+	
+.banner-left {
+	text-align: left;
+	min-height: 80%;
+	min-width: 400px;
+	position: absolute;
+	left: 0px;
+}
+
+.banner-left .title {
+	padding-left: 20px;
+}
+
+.banner-left .select-bar {
+	max-width: 400px;
+}
+
+table.pagination {
+	float: right;
+	padding-bottom: 20px;
+}
+
+table.pagination tr {
+	float: left;
+	width: 350px;
+	padding-left: 20px;
+}
+
+.banner-left h4 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-bottom: 15px;
+}
+
+.banner-left tr {
+	color: black;
+	font-size: 18px;
+}
+
+.banner-left tr:hover {
+	background-color: #f2f2f2;
+}
+
+.banner-left td {
+	padding: 12px;
+}
+	
+/*Popular Course==========================================*/
+.popular-background {
+	background: url(../img/kursus/kursus-background.png) no-repeat center;
+	background-size: cover;
+	background-color: #f2f2f2;
+	min-height: 100vh;
+}
+	
+.popular-carousel {
+	margin-left: 200px;
+}
+
+.title-position {
+	padding-bottom: 10px
+}
+
+	
+	
+	
+	
+/* Halaman Login */
+
+
+
+
+
+.login-area {
+	background: url(../img/kursus/login-background.jpg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+}
+@media (max-width: 991px) {
+    .login-area {
+      #padding: 60px 0px; } }
+
+.login-section {
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	margin-right: -120px;
+	margin-left: 60px;
+}
+@media (max-width: 991px) {
+    .login-section {
+		margin-right: 20px;
+		margin-left: 10px; } }
+
+.login-title {
+	font-weight: 900;
+	font-size: 48px;
+	background: -webkit-linear-gradient(45deg, #333 0%, #3943c6 100%);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	#color: #3943c6;
+	padding-bottom: 15px;
+}
+
+.login-welcome {
+	color: black;
+}
+
+.login-form {
+	color: black;
+}
+
+.login-area .login-section .login-btn {
+	font-size: 12px;
+	color: #fff;
+	line-height: 50px;
+	padding: 0 104px;
+	border: 0px;
+	font-weight: 700;
+	margin-top: 20px;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(45deg, #333 0%, #3943c6 100%);
+}
+.login-area .login-section .login-btn:hover {
+	background: -webkit-linear-gradient(45deg, #1a1a1a 0%, #2e359e 100%);
+	cursor: pointer;
+}
