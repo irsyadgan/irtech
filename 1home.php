@@ -3,13 +3,13 @@ include "1database.php";
 
 // Check user login or not
 if(!isset($_SESSION['uname'])){
-    header('Location: login.html');
+    header('Location: login.php');
 }
 
 // logout
 if(isset($_POST['but_logout'])){
     session_destroy();
-    header('Location: login.html');
+    header('Location: login.php');
 }
 ?>
 <!doctype html>
