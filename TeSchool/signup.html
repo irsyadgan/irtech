@@ -15,7 +15,7 @@
   <!-- meta character set -->
   <meta charset="UTF-8" />
   <!-- Site Title -->
-  <title>Login</title>
+  <title>Sign Up</title>
 
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:400,400i,500,700" rel="stylesheet" />
   <!--
@@ -32,32 +32,51 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/irsyad.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Semi-Bold" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
 </head>
 
 <body>
   <!-- ================ Start Registration Area ================= -->
-  <section class="registration-area login-area">
+  <section class="registration-area signup-area">
     <div class="container">
       <div class="row align-items-end">
         <div class="offset-lg-3 col-lg-4 col-md-6">
-          <div class="course-form-section login-section">
-            <p class="font-judul login-title">Login</p>
-            <p class="login-welcome">Welcome back! Login to access TeSchool </br> did you <a href="#">forget your password?</a></p>
-            <form class="course-form-area contact-page-form course-form text-right" id="myForm" action="mail.html" method="post">
-              <div class="form-group col-md-12">
-                <input type="text" class="form-control" id="username" name="username" placeholder="Username" onfocus="this.placeholder = ''"
-                 onblur="this.placeholder = 'Username'">
-              </div>
-              <div class="form-group col-md-12">
-                <input type="password" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''"
-                 onblur="this.placeholder = 'Password'">
-              </div>
-              <div class="col-lg-12 text-center">
-                <button class="login-btn text-uppercase">Continue</button>
-              </div>
-            </form>
-          </div>
+		  <span>
+			  <div class="course-form-section signup-section">
+				<div class="font-judul signup-title">
+					<span class="te">Te</span>
+					<span class="school">School</span>
+				</div>
+				<img class="signup-logo" src="img/kursus/logo.png" alt="Italian Trulli">
+				<form class="course-form-area contact-page-form course-form text-right" id="myForm" action="mail.html" method="post">
+				  <div class="form-group col-md-12">
+					<input type="text" class="form-control signup-form" id="username" name="username" placeholder="Username" onfocus="this.placeholder = ''"
+					 onblur="this.placeholder = 'Username'">
+				  </div>
+				  <div class="form-group col-md-12">
+					<input type="password" class="form-control signup-form" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''"
+					 onblur="this.placeholder = 'Password'">
+				  </div>
+				  <div class="form-group col-md-12">
+					<input type="password" class="form-control signup-form" id="reTypePassword" name="password" placeholder="Re-type Password" onfocus="this.placeholder = ''"
+					 onblur="this.placeholder = 'Re-type Password'">
+				  </div>
+				  <div class="form-group col-md-12">
+					<input type="text" class="form-control signup-form" id="email" name="email" placeholder="Email" onfocus="this.placeholder = ''"
+					 onblur="this.placeholder = 'Email'">
+				  </div>
+				  <div class="col-lg-12 text-center">
+					<button class="signup-btn text-uppercase">Continue</button>
+				  </div>
+				</form>
+				<br/>
+				<p class="signup-welcome">Welcome to TeSchool </br> did you <a href="#">Have an account?</a></p>
+			  </div>
+		  </span>
+		  <span>
+			<img class="signup-logo" src="img/kursus/logo.png" alt="Italian Trulli">
+		  </span>
         </div>
       </div>
     </div>

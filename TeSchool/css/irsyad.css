@@ -1,5 +1,28 @@
+a {
+	color: #3943c6;
+}
+a:focus,
+a:hover {
+	color: #2e359e;
+	outline: 0;
+}
+
+.font-teschool {
+	font-size: 32px;
+}
+.font-teschool .te {
+	
+}
+.font-teschool .school {
+	
+}
+
+.font-logo {
+	font-family: "Open sans", sans-serif;
+}
+
 .font-judul{
-	font-family: "Fira Sans", sans-serif;);
+	font-family: "Fira Sans Semi-Bold", sans-serif;
 }
 /*Navbar==========================================*/
 .navbar-margin {
@@ -129,20 +152,17 @@ table.pagination tr {
 		margin-left: 10px; } }
 
 .login-title {
-	font-weight: 900;
 	font-size: 48px;
+	font-weight: bold;
 	background: -webkit-linear-gradient(45deg, #333 0%, #3943c6 100%);
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
 	#color: #3943c6;
 	padding-bottom: 15px;
+	padding-top: 10px;
 }
 
 .login-welcome {
-	color: black;
-}
-
-.login-form {
 	color: black;
 }
 
@@ -158,6 +178,82 @@ table.pagination tr {
 	background: -webkit-linear-gradient(45deg, #333 0%, #3943c6 100%);
 }
 .login-area .login-section .login-btn:hover {
+	background: -webkit-linear-gradient(45deg, #1a1a1a 0%, #2e359e 100%);
+	cursor: pointer;
+}
+
+
+
+
+
+/* Halaman Login */
+
+
+
+
+
+.signup-area {
+	background: url(../img/kursus/signup-background.jpg) no-repeat center;
+	background-size: cover;
+	height: 100vh;
+}
+
+@media (max-width: 991px) {
+    .signup-area {
+      #padding: 60px 0px; } }
+
+.signup-section {
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+	margin-top: -75px;
+	margin-right: -120px;
+	margin-left: 60px;
+	max-height: 620px;
+}
+@media (max-width: 991px) {
+    .signup-section {
+		margin-right: 20px;
+		margin-left: 10px; } }
+
+.signup-title {
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 15px;
+	margin-top: -60px;
+}
+.signup-title .te {
+	color: #696969;
+	margin-right: -14px;
+}
+
+.signup-title .school {
+	background: -webkit-linear-gradient(45deg, #333 0%, #3943c6 100%);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+}
+
+.signup-logo {
+	width:175px;
+	height:175px
+}
+
+.signup-welcome {
+	color: black;
+}
+
+.signup-area .signup-section .signup-btn {
+	font-size: 12px;
+	color: #fff;
+	line-height: 50px;
+	padding: 0 104px;
+	border: 0px;
+	font-weight: 700;
+	margin-top: 20px;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(45deg, #333 0%, #3943c6 100%);
+}
+.signup-area .signup-section .signup-btn:hover {
 	background: -webkit-linear-gradient(45deg, #1a1a1a 0%, #2e359e 100%);
 	cursor: pointer;
 }
