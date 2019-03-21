@@ -15,10 +15,12 @@
 	
 	$username = "";
 	$password = "";
+	$email = "";
 	
-	if (isset($_POST["username"]) && isset($_POST["username"])){
+	if (isset($_POST["username"]) && isset($_POST["username"]) && isset($_POST["email"])){
 		$username = checkInput($_POST["username"]);
 		$password = checkInput($_POST["password"]);
+		$email = checkInput($_POST["email"]);
 	}
 	else {
 		// set response code - 400 bad request
@@ -29,26 +31,14 @@
 	}
 	
 	// make sure data not empty
-	if($username != "" && $password != "") {
+	if($username != "" && $password != "" && $email != "") {
 		$user = new User($db);
 		// put User data
-		$user->putDataTwoParam($username, $password);
+		$user->putDataThreeParam($username, $password, $email);
 		// check User login
-		$stmt = $user->userSignIn();
-		// Count row
-		$num = $stmt->rowCount();
+		$stmt = $user->userSignUp();
 		
-		if($num > 0) {
-			$var_username = "";
-			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-				$var_username = $row["username"];
-			}
-			
-			session_start();
-			$_SESSION["uname"] = $var_username;
-			$_SESSION["start"] = time();
-			$_SESSION["expire"] = $_SESSION["start"] + (30 * 60);
-			
+		if($stmt) {
 			echo 1;
 		}
 		else {
