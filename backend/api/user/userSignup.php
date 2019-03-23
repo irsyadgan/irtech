@@ -17,7 +17,7 @@
 	$password = "";
 	$email = "";
 	
-	if (isset($_POST["username"]) && isset($_POST["username"]) && isset($_POST["email"])){
+	if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["email"])) {
 		$username = checkInput($_POST["username"]);
 		$password = checkInput($_POST["password"]);
 		$email = checkInput($_POST["email"]);
@@ -45,11 +45,10 @@
 			echo 2;
 		}
 	}
-	 
 	else {
 		// set response code - 400 bad request
 		http_response_code(400);
 		// return false
-		echo 0;
+		echo 400;
 	}
 ?>
