@@ -1,0 +1,138 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    word-wrap: break-word;
+}
+
+h2{
+}
+
+div:nth-child(1)
+{
+    background-image: url(img/pengantar-bg.jpg);
+    background-size: cover;
+}
+
+div:nth-child(2)
+{
+    background-image: url(img/benefit-bg.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+div:nth-child(3)
+{
+    height: 400px;
+    background-image: url(img/pengantar-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div:nth-child(4)
+{
+    background:aquamarine;
+}
+
+.Kuy__Belajar__Robot__ {
+    #background-color: green;
+    width: 34%;
+    font-size: 150px;
+    font-family: "Fira Sans Heavy";
+    color: rgb(255, 255, 255);
+    line-height: 0.753;
+    #-moz-transform: matrix( 3.90520867097701,0,0,3.90520867097701,0,0);
+    #-webkit-transform: matrix( 3.90520867097701,0,0,3.90520867097701,0,0);
+    #-ms-transform: matrix( 3.90520867097701,0,0,3.90520867097701,0,0);
+    position: absolute;
+    left: 3%;
+    top: 15%;
+    z-index: 8;
+}
+.Irtech_Merupakan {
+    #background-color: green;
+    width: 34%;
+    font-size: 25px;
+    font-family: "Open Sans Light";
+    color: rgb(0, 216, 255);
+    line-height: 1.2;
+    #-moz-transform: matrix( 0.70634251991272,0,0,0.70634251991272,0,0);
+    #-webkit-transform: matrix( 0.70634251991272,0,0,0.70634251991272,0,0);
+    #-ms-transform: matrix( 0.70634251991272,0,0,0.70634251991272,0,0);
+    position: absolute;
+    left: 3%;
+    top: 60%;
+    z-index: 8;
+  }
+  
+.Kuy__Belajar__Robot__ .biru{
+    color:#00d8ff;
+}
+
+.robot-gambar {
+    position: absolute;
+    padding-top: 7%;
+    width: 100%;
+    height: auto;
+    z-index: 6;
+  }
+.pengantar-button{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 0%;
+    z-index: 6;
+}
+/* div 2 isi */
+.Belajar_di__TeSchool_dapet_apa__aja_sih_ {
+    #background-color: green;
+    width: 34%;
+    font-size: 110px;
+    font-family: "Fira Sans Heavy";
+    color: rgb(255, 255, 255);
+    line-height: 0.86;
+    text-align: left;
+    #-moz-transform: matrix( 3.54032354974945,0,0,3.54032354974945,0,0);
+    #-webkit-transform: matrix( 3.54032354974945,0,0,3.54032354974945,0,0);
+    #-ms-transform: matrix( 3.54032354974945,0,0,3.54032354974945,0,0);
+    position: absolute;
+    left: 3%;
+    top: 120%;
+    z-index: 5;
+}
+  .Belajar_di__TeSchool_dapet_apa__aja_sih_ .biru{
+    color:#00d8ff;
+}
+.pengantar-button-2{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 105%;
+    left: 0%;
+    z-index: 6;
+}
+.benefit-hp {
+    position: absolute;
+    padding-left: 55%;
+    width: 90%;
+    height: auto;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  
+
+  
+  
+
+ 
+  
