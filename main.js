@@ -64,6 +64,30 @@ window.addEventListener('scroll', function (e)
     var scrolled = window.pageYOffset;
     var rate = scrolled * -0.4;
 
+
+
     target.style.transform = 'translate3d('+rate+'px, 0px , 0px)'
+    // target.style.background = '#ffcc00';
+})
+//div 3
+// window.addEventListener('scroll', function (e)
+// {
+//     const parallax = document.getElementById
+//     ("parallaxbg3");
+
+//     let offset = window.pageYOffset;
+//     parallax.style.backgroundPositionY = offset
+//     * -0.05 + "px";
+// })
+
+window.addEventListener('scroll', function (e)
+{
+    
+    const target = document.querySelector('.video-laptop');
+
+    var scrolled = window.pageYOffset;
+    var rate = scrolled * 2;
+
+    target.style.transform = 'translate3d(0px, 0px , 0px)'
     // target.style.background = '#ffcc00';
 })

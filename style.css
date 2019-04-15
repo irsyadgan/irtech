@@ -26,21 +26,18 @@ div:nth-child(2)
 {
     background-image: url(img/benefit-bg.jpg);
     background-size: cover;
-    width: 100%;
 }
 
 div:nth-child(3)
 {
-    height: 400px;
-    background-image: url(img/pengantar-bg.jpg);
+    background-image: url(img/video-bg.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    background-size: cover;
+    height: 110vh;
 }
 
 div:nth-child(4)
 {
-    background:aquamarine;
+    background:#030619;
 }
 
 .Kuy__Belajar__Robot__ {
@@ -126,9 +123,33 @@ div:nth-child(4)
     width: 90%;
     height: auto;
     z-index: 0;
-    overflow: hidden;
   }
-/* test */
+/* div 3 isi */
+.Bagaimana_Teschool_bekerja_ {
+    #background-color: green;
+    font-size: 90px;
+    font-family: "Fira Sans Heavy";
+    color: rgb(255, 255, 255);
+    line-height: 0.86;
+    text-align: center;
+    #-moz-transform: matrix( 3.54032354974945,0,0,3.54032354974945,0,0);
+    #-webkit-transform: matrix( 3.54032354974945,0,0,3.54032354974945,0,0);
+    #-ms-transform: matrix( 3.54032354974945,0,0,3.54032354974945,0,0);
+    position: absolute;
+    top: 210%;
+    z-index: 5;
+}
+.Bagaimana_Teschool_bekerja_ .biru{
+    color:#00d8ff;
+}
+
+.video-laptop {
+    position: absolute;
+    padding-top: 10%;
+    width: 90%;
+    height: auto;
+    z-index: 4;
+  }
 
   
 
