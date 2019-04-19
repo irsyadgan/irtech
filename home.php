@@ -8,7 +8,7 @@
 	// logout
 	if(isset($_POST['but_logout'])){
 		session_destroy();
-		header('Location: login.php');
+		header('Location: login.html');
 	}
 ?>
 <!doctype html>

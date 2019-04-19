@@ -1,0 +1,5 @@
+database name : webgaje
+	table name : user_profile
+		row1 : username
+		row2 : password
+		row3 : email
