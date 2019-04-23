@@ -1,0 +1,11 @@
+webgaje
+	course_list
+		int		id
+		varchar(200)	course_image_link
+		varchar(200)	title
+		int		price
+		int 		review
+	user_profile
+		varchar(200)	username
+		varchar(200)	password
+		varchar(200)	email
