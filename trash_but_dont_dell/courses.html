@@ -100,74 +100,40 @@
 				<div class="owl-carousel popuar-course-carusel">
 				
 				<?php
-					include_once 'backend/api/config/Database.php';
-					include_once 'backend/object/Course.php';
-					
-					$database = new Database();
-					$db = $database->getConnection();
-					
-					// make sure data not empty
-					$course = new Course($db);
-					// select all course
-					$stmt = $course->courseSelectAll();
-					// Count row
-					$num = $stmt->rowCount();
-						
-					if($num > 0) {
-						$var_image_link = "";
-						$var_title = "";
-						$var_price = "";
-						$var_review = "";
-						while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-							$var_image_link = $row["course_image_link"];
-							$var_title = $row["title"];
-							$var_price = $row["price"];
-							$var_review = $row["review"];
-							
-							echo "<div class=\"single-popular-course\">";
-								echo "<div class=\"thumb\">";
-									echo "<img class=\"f-img img-fluid mx-auto\" src=\"$var_image_link\" alt=\"\" />";
-								echo "</div>";
-								echo "<div class=\"details\">";
-									echo "<div class=\"d-flex justify-content-between mb-20\">";
-										echo "<p class=\"name\">programming language</p>";
-										echo "<p class=\"value\">$var_price</p>";
-									echo "</div>";
-									echo "<a href=\"#\">";
-										echo "<h4>$var_title</h4>";
-									echo "</a>";
-									echo "<div class=\"bottom d-flex mt-15\">";
-										echo "<ul class=\"list\">";
-											echo "<li>";
-												echo "<a href=\"#\"><i class=\"fa fa-star\"></i></a>";
-											echo "</li>";
-											echo "<li>";
-												echo "<a href=\"#\"><i class=\"fa fa-star\"></i></a>";
-											echo "</li>";
-											echo "<li>";
-												echo "<a href=\"#\"><i class=\"fa fa-star\"></i></a>";
-											echo "</li>";
-											echo "<li>";
-												echo "<a href=\"#\"><i class=\"fa fa-star\"></i></a>";
-											echo "</li>";
-											echo "<li>";
-												echo "<a href=\"#\"><i class=\"fa fa-star\"></i></a>";
-											echo "</li>";
-										echo "</ul>";
-										echo "<p class=\"ml-20\">$var_review</p>";
-									echo "</div>";
-								echo "</div>";
+					echo "<div class=\"single-popular-course\">";
+						echo "<div class=\"thumb\">";
+							echo "<img class=\"f-img img-fluid mx-auto\" src=\"img/popular-course/p1.jpg\" alt=\"\" />";
+						echo "</div>";
+						echo "<div class=\"details\">";
+							echo "<div class=\"d-flex justify-content-between mb-20\">";
+								echo "<p class=\"name\">programming language</p>";
+								echo "<p class=\"value\">$150</p>";
 							echo "</div>";
-						}
-					}
-					
-					else {
-						// set response code - 400 bad request
-						http_response_code(400);
-						// return false
-						echo 0;
-					}
-					
+							echo "<a href=\"#\">";
+								echo "<h4>Learn Angular JS Course for Legendary Persons</h4>";
+							echo "</a>";
+							echo "<div class=\"bottom d-flex mt-15\">";
+								echo "<ul class=\"list\">";
+									echo "<li>";
+										echo "<a href=\"#\"><i class=\"fa fa-star\"></i></a>";
+									echo "</li>";
+									echo "<li>";
+										echo "<a href=\"#\"><i class=\"fa fa-star\"></i></a>";
+									echo "</li>";
+									echo "<li>";
+										echo "<a href=\"#\"><i class=\"fa fa-star\"></i></a>";
+									echo "</li>";
+									echo "<li>";
+										echo "<a href=\"#\"><i class=\"fa fa-star\"></i></a>";
+									echo "</li>";
+									echo "<li>";
+										echo "<a href=\"#\"><i class=\"fa fa-star\"></i></a>";
+									echo "</li>";
+								echo "</ul>";
+								echo "<p class=\"ml-20\">25 Reviews</p>";
+							echo "</div>";
+						echo "</div>";
+					echo "</div>";
 				?>
 				
 				</div>

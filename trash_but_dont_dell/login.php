@@ -35,12 +35,52 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans" >
 
   <script type = "text/javascript" 
-    src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-  </script>
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
     
-  <script src="functional_js/signin_js.js">
-    
-  </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+
+          $("#but_submit").click(function(){
+            var username = $("#username").val().trim();
+            var password = $("#password").val().trim();
+
+            if( username != "" && password != "" ){
+              $.ajax({
+                url:'backend/api/user/userLogin.php',
+                type:'post',
+                data:{username:username,password:password},
+                  success:function(response){
+                    var msg = "";
+                    if(response == 1){
+                      window.location = "home.php";
+                      msg = "response 1";
+                    }else if(response == 2) {
+                      alert("invalid username and password");
+                      msg = "Invalid username and password!";
+                    }
+										else if(response == 0) {
+                      alert("invalid input");
+                    }
+                    else {
+                      alert("something not rihgt");
+                    }
+                    //$("#message").html(msg);
+                    $("#message").html(response);
+                  }
+              });
+            }
+            
+            else {
+              alert("Please fill the username and password");
+              $("#message").html("Please fill the username and password")
+                .css("font-style", "italic")
+                .css("color", "red");
+            }
+          });
+
+        });
+      </script>
 </head>
 
 <body>
@@ -52,7 +92,7 @@
           <div class="course-form-section login-section">
             <h1 class="font-judul login-title">Login</h1>
             <p class="login-welcome">Welcome back! Login to access TeSchool </br> did you forget your password?</p>
-            <div class="course-form-area contact-page-form course-form text-right" id="myForm">
+            <form class="course-form-area contact-page-form course-form text-right" id="myForm" method="post">
               <div class="form-group col-md-12" id="message"></div>
               <div class="form-group col-md-12">
                 <input type="text" class="form-control login-form" id="username" name="username" placeholder="Username" onfocus="this.placeholder = '' " onblur="this.placeholder = 'Username'">
@@ -61,9 +101,9 @@
                 <input type="password" class="form-control login-form" id="password" name="password" placeholder="Password" onfocus="this.placeholder = '' " onblur="this.placeholder = 'Password'">
               </div>
               <div class="col-lg-12 text-center">
-                <button class="login-btn text-uppercase" id="but_submit">Continue</button>
+                <input type="button" class="login-btn text-uppercase" value="CONTINUE" id="but_submit"/>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

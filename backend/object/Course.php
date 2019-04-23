@@ -3,11 +3,12 @@
 	 
 		// database connection and table name
 		private $conn;
-		private $table_name = "course_list";
+		private $table_main = "course_list";
 	 
 		// object properties
 		private $image;
 		private $price;
+		private $review;
 		private $title;
 		
 		// constructor with $db as database connection
@@ -15,16 +16,10 @@
 			$this->conn = $db;
 		}
 
-		function putDataThreeParam($title, $price, $image) {
-			$this->image = $image;
-			$this->price = $price;
-			$this->title = $title;
-		}
-
 		// check User login
-		function userSignIn(){
+		function courseSelectAll(){
 			// select all query
-			$query = "SELECT * FROM " . $this->table_name;
+			$query = "SELECT * FROM " . $this->table_main;
 			// prepare query statement
 			$stmt = $this->conn->prepare($query);
 			// execute query
