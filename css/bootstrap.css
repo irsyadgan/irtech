@@ -4205,10 +4205,6 @@ input[type=submit].btn-block {
     white-space: nowrap
 }
 
-.navbar-brand .logo {
-	height: 50px;
-}
-
 .navbar-brand:focus,
 .navbar-brand:hover {
     text-decoration: none
