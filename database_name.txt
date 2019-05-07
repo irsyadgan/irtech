@@ -5,6 +5,17 @@ webgaje
 		varchar(200)	title
 		int		price
 		int 		review
+	course_detail
+		int		id
+		varchar(200)	title
+		float		rating_avg
+		int		rating_total
+		varchar(200)	author
+		int		student
+		int		price
+		varchar(500)	content
+		varchar(700)	content_detail
+		varchar(200)	video_link
 	user_profile
 		varchar(200)	username
 		varchar(200)	password

@@ -10,6 +10,8 @@
 		private $password;
 		private $email;
 		
+		private $new_password;
+		
 		// constructor with $db as database connection
 		public function __construct($db) {
 			$this->conn = $db;
@@ -84,6 +86,24 @@
 				
 				return true;
 			}
+		}
+		
+		function userResetPassword(){
+			$query = "UPDATE " . $this->table_name . " SET password=:new_password where username=:username and password=:password limit 1";
+			// prepare query statement
+			$stmt = $this->conn->prepare($query);
+			// sanitize
+			$this->new_password=htmlspecialchars(strip_tags($this->new_password));
+			$this->username=htmlspecialchars(strip_tags($this->username));
+			$this->password=htmlspecialchars(strip_tags($this->password));
+			// bind values
+			$stmt->bindParam(":new_password", $this->new_password);
+			$stmt->bindParam(":username", $this->username);
+			$stmt->bindParam(":password", $this->password);
+			// execute query
+			$stmt->execute();
+
+			return $stmt;
 		}
 	}
 ?>

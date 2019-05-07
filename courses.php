@@ -114,11 +114,13 @@
 					$num = $stmt->rowCount();
 						
 					if($num > 0) {
+						$var_id= "";
 						$var_image_link = "";
 						$var_title = "";
 						$var_price = "";
 						$var_review = "";
 						while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+							$var_id = $row["id"];
 							$var_image_link = $row["course_image_link"];
 							$var_title = $row["title"];
 							$var_price = $row["price"];
@@ -133,7 +135,7 @@
 										echo "<p class=\"name\">programming language</p>";
 										echo "<p class=\"value\">$var_price</p>";
 									echo "</div>";
-									echo "<a href=\"#\">";
+									echo "<a href=\"course-detail.php?id=$var_id\">";
 										echo "<h4>$var_title</h4>";
 									echo "</a>";
 									echo "<div class=\"bottom d-flex mt-15\">";
