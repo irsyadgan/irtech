@@ -18,6 +18,7 @@ window.addEventListener('scroll', function (e)
     var scrolled = window.pageYOffset;
     var rate = scrolled * -0.2;
 
+
     target.style.transform = 'translate3d(0px, '+rate+'px , 0px)'
     // target.style.background = '#ffcc00';
 })
@@ -63,10 +64,21 @@ window.addEventListener('scroll', function (e)
 
     var scrolled = window.pageYOffset;
     var rate = scrolled * -0.4;
+    //var rate2 = scrolled * 0.6;
+    // console.log(target.style);
 
+    if (scrolled > 800)
+    {
+        target.style.transform = 'translate3d('+rate2+'px, 0px , 0px)'
+        target.style.background = '#ffcc00';
+    }
+    else if (scrolled < 800)
+    {
+        target.style.transform = 'translate3d('+rate+'px, 0px , 0px)'
+        
+    }
 
-
-    target.style.transform = 'translate3d('+rate+'px, 0px , 0px)'
+    
     // target.style.background = '#ffcc00';
 })
 //div 3
@@ -84,10 +96,14 @@ window.addEventListener('scroll', function (e)
 {
     
     const target = document.querySelector('.video-laptop');
-
     var scrolled = window.pageYOffset;
-    var rate = scrolled * 2;
+    var rate = scrolled * 0.5;
 
-    target.style.transform = 'translate3d(0px, 0px , 0px)'
+    if (scrolled > 1200)
+    {
+        target.style.transform = 'scale('+(1 + rate/13)/100+')'
+    }
+    
+    
     // target.style.background = '#ffcc00';
 })

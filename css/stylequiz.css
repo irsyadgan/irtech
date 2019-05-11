@@ -1,0 +1,33 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background: floralwhite;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    width: 70%;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+.pull-left{float: left;}
+.pull-right{float: right;}
+
+header{
+    background:darkblue;
+    color: white;
+    padding: 5px 10px;
+    overflow:auto;
+    font-size: 16px;
+}
+
+footer{
+    background-color: darkblue;
+    color: white;
+    padding: 5px 10px;
+    overflow: auto;
+}
