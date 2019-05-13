@@ -43,11 +43,18 @@ div:nth-child(4)
     background:#030619;
 }
 
+.font-logo {
+	font-family: "Open sans", sans-serif;
+}
+
+.font-judul{
+	font-family: "Fira Sans Heavy", sans-serif;
+}
+
 .Kuy__Belajar__Robot__ {
     #background-color: green;
     width: 34%;
     font-size: 150px;
-    font-family: "Fira Sans Heavy";
     color: rgb(255, 255, 255);
     line-height: 0.753;
     #-moz-transform: matrix( 3.90520867097701,0,0,3.90520867097701,0,0);
@@ -97,7 +104,6 @@ div:nth-child(4)
     #background-color: green;
     width: 34%;
     font-size: 110px;
-    font-family: "Fira Sans Heavy";
     color: rgb(255, 255, 255);
     line-height: 0.86;
     text-align: left;
@@ -131,7 +137,6 @@ div:nth-child(4)
 .Bagaimana_Teschool_bekerja_ {
     #background-color: green;
     font-size: 90px;
-    font-family: "Fira Sans Heavy";
     color: rgb(255, 255, 255);
     line-height: 0.86;
     text-align: center;
@@ -157,7 +162,6 @@ div:nth-child(4)
     #background-color: green;
     width: 34%;
     font-size: 60px;
-    font-family: "Fira Sans Heavy";
     color: rgb(255, 255, 255);
     line-height: 0.86;
     text-align: center; 
