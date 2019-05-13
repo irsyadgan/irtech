@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylepage-video.css">
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#"><span class="judul">Judul Utama Course</span></a>
+    <a href="#">Judul episode 1</a>
+    <a href="#">Judul episode 2</a>
+    <a href="#">Judul episode 3</a>
+    <a href="#">Judul episode 4</a>
+    <a href="#">Judul episode 5</a>
+    <a href="#">Judul episode seterusnya</a>
+  </div>
+</div>
+
+<div id="myNavbawah" class="overlaybawah">
+  <a href="javascript:void(0)" class="closebtnbawah" onclick="closeNavbawah()">&times;</a>
+  <div class="overlaybawah-content">
+    <a href="#"><span class="judul">Judul episode yang lagi ditonton</span></a>
+    <a href="#"><span class="deskripsi">episode yang lagi ditonton</span></a>
+    <a href="#">Tombol Pindah Ke Page Quiz</a>
+  </div>
+</div>
+
+<div id="myNavkanan" class="overlaykanan">
+  <a href="javascript:void(0)" class="closebtnkanan" onclick="closeNavkanan()">&times;</a>
+  <div class="overlaykanan-content">
+    <a href="#">Video1</a>
+    <a href="#">Video2</a>
+    <a href="#">Video3</a>
+    <a href="#">Video4</a>
+  </div>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9698;</span>
+<span style="font-size:30px;cursor:pointer" onclick="openNavbawah()">&#9660;</span>
+<span style="font-size:30px;cursor:pointer" onclick="openNavkanan()">&#9699;</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "25%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function openNavbawah() {
+  document.getElementById("myNavbawah").style.height = "100%";
+}
+
+function closeNavbawah() {
+  document.getElementById("myNavbawah").style.height = "0%";
+}
+
+function openNavkanan() {
+  document.getElementById("myNavkanan").style.width = "25%";
+}
+
+function closeNavkanan() {
+  document.getElementById("myNavkanan").style.width = "0%";
+}
+
+
+</script>
+     
+</body>
+</html>

@@ -1,0 +1,166 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlaybawah {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlaykanan {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .overlay-content .judul{
+    font-size: 30px;
+  }
+  
+  .overlaybawah-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlaybawah-content .judul {
+      font-size: 10px;
+  }
+
+  .overlaybawah-content .deskripsi {
+    font-size: 10px;
+}
+  
+  .overlaykanan-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlaybawah a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .overlaykanan a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlaybawah a:hover, .overlaybawah a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlaykanan a:hover, .overlaykanan a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    text-align: center;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  .overlaybawah .closebtnbawah {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  .overlaykanan .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlaybawah {overflow-y: auto;}
+    .overlaybawah a {font-size: 20px}
+    .overlaybawah .closebtnbawah {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlaykanan a {font-size: 20px}
+    .overlaykanan .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  
+  
