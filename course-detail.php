@@ -38,48 +38,42 @@
 
 <body>
   <!-- ================ Start Header Area ================= -->
-  <header class="default-header navbar-header">
-    <nav class="navbar navbar-expand-lg  navbar-light navbar-margin">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img class="logo" src="img/kursus/logo.png" alt=""/>
-        </a> 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="lnr lnr-menu"></span>
-        </button>
-        
-        <h3 class="text-white">TeSchool</h3>
-        
-        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-						<li class="dropdown">
-              <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+  <header class="navigation-header">
+      <div class="navigation-bar">
+        <div class="navigation-brand">
+          <a href="index.html">
+            <img class="logo" src="img/kursus/logo.png" alt="logo"/>
+          </a>
+          <a class="text" href="index.html">
+            <h3 class="text-white font-judul">TeSchool</h3>
+          </a>
+        </div>
+        <div class="navigation-nav">
+          <div class="dropdown">
+            <a class="dropdown-toggle text-white" data-toggle="dropdown">
                 Kategori
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="elements.html">Dasar</a>
-                <a class="dropdown-item" href="course-details.html">Proyek Sederhana</a>
-              </div>
-            </li>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="about.html">Tentang</a></li>
-            <li><a href="courses.html">Kursus</a></li>
-            <li>
-              <button class="search">
-                <span class="lnr lnr-magnifier" id="search"></span>
-              </button>
-            </li>
-          </ul>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+          <a href="index.html">Beranda</a>
+          <a href="index.html">Tentang</a>
+          <a href="courses.html">Kursus</a>
+          <a class="lnr lnr-magnifier navigation-search" id="navigation-search"></a>
+          <a href="login.html">Log In</a>
+          <a href="signup.html">Sign Up</a>
         </div>
       </div>
-    </nav>
-    <div class="search-input search-box" id="search-input-box">
+    </div>
+    <div class="navigation-search-input navigation-search-box" id="navigation-search-input-box">
       <div class="container">
         <form class="d-flex justify-content-between">
-          <input type="text" class="form-control" id="search-input" placeholder="Search Here" />
+          <input type="text" class="form-control" id="navigation-search-input" placeholder="Search Here" />
           <button type="submit" class="btn"></button>
-          <span class="lnr lnr-cross" id="close-search" title="Close Search"></span>
+          <span class="lnr lnr-cross" id="navigation-close-search" title="Close Search"></span>
         </form>
       </div>
     </div>

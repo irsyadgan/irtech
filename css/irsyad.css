@@ -84,32 +84,155 @@ a:hover {
     cursor: pointer;
     padding: 10px 3px;
 }
-/*Navbar==========================================*/
-.navbar-margin {
-	margin-top: -25px;
+/*navigation==========================================*/
+.navigation-bar {
+	overflow: hidden;
+  background: url(../img/kursus/navigation-background.png) no-repeat center;
+	background-color: black;
+	width: 100%;
+	height: 100%;
 }
 
-.navbar-header {
-	background: url(../img/kursus/kursus-header.png) no-repeat center;
+.navigation-brand {
+	margin-left: 120px;
+}
+.navigation-brand a {
+	float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+	padding: 14px 16px;
+	padding-right: 0px;
+	text-decoration: none;
+}
+.navigation-brand .text {
+	padding: 25px 0px;
 }
 
+.navigation-nav {
+	float: right;
+	text-align: center;
+	text-decoration: none;
+	margin-right: 50px;
+}
+
+.navigation-nav a {
+  float: left;
+  font-size: 16px;
+	color: white;
+	padding: 28px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 28px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.navigation-bar .navigation-nav a:hover, .dropdown:hover .dropbtn {
+  background-color: #000099;
+}
+
+.dropdown-content {
+  display: none;
+	position: fixed;
+	margin-top: 75px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navigation-search {
+	margin-top: 2px;
+}
+
+.navigation-search-box {
+	background: -webkit-linear-gradient(45deg, #1a1a1a 0%, #2e359e 100%);
+	background: -moz-linear-gradient(45deg, #1a1a1a 0%, #2e359e 100%);
+  background: -o-linear-gradient(45deg, #1a1a1a 0%, #2e359e 100%);
+  background: -ms-linear-gradient(45deg, #1a1a1a 0%, #2e359e 100%);
+  background: linear-gradient(45deg, #1a1a1a 0%, #2e359e 100%);
+}
+
+#navigation-search-input-box {
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  z-index: 999;
+  text-align: center;
+  padding: 5px 20px; }
+  @media (max-width: 991px) {
+    #navigation-search-input-box {
+      margin-top: -30px; } }
+  #navigation-search-input-box .form-control {
+    background: transparent;
+    border: 0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0; }
+    #navigation-search-input-box .form-control:focus {
+      box-shadow: none;
+      outline: none; }
+  #navigation-search-input-box input.placeholder {
+    color: #ffffff;
+    font-size: 14px; }
+  #navigation-search-input-box input:-moz-placeholder {
+    color: #ffffff;
+    font-size: 14px; }
+  #navigation-search-input-box input::-moz-placeholder {
+    color: #ffffff;
+    font-size: 14px; }
+  #navigation-search-input-box input::-webkit-input-placeholder {
+    color: #ffffff;
+    font-size: 14px; }
+  #navigation-search-input-box .btn {
+    width: 0;
+    height: 0;
+    padding: 0;
+    border: 0; }
+  #navigation-search-input-box .lnr-cross {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+		padding: 10px 3px; }
+		
 .logo {
 	height: 50px;
-}
-
-.navbar-nav li a:hover {
-	background-color: #000066;
-	opacity: 0.8;
-}
-
-.navbar-nav .search:hover {
-    background-color: #000066;
-    opacity: 0.8;
-	border-radius: 50%;
-}
-	
-.navbar-nav .dropdown .dropdown-item:hover {
-	background-color: #f2f2f2;
 }
 
 /*Banner==========================================*/

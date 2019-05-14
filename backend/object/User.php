@@ -4,6 +4,8 @@
 		// database connection and table name
 		private $conn;
 		private $table_name = "user_profile";
+		private $table_course = "course_list";
+		private $table_user_course = "user_course";
 	 
 		// object properties
 		private $username;
@@ -100,6 +102,22 @@
 			$stmt->bindParam(":new_password", $this->new_password);
 			$stmt->bindParam(":username", $this->username);
 			$stmt->bindParam(":password", $this->password);
+			// execute query
+			$stmt->execute();
+
+			return $stmt;
+		}
+		
+		// select all course
+		function userSelectCourse(){
+			// select all query
+			$query = "SELECT * FROM " . $this->table_user_course . " NATURAL JOIN " . $this->table_course . " WHERE username=:username";
+			// prepare query statement
+			$stmt = $this->conn->prepare($query);
+			// sanitize
+			$this->username=htmlspecialchars(strip_tags($this->username));
+			// bind values
+			$stmt->bindParam(":username", $this->username);
 			// execute query
 			$stmt->execute();
 

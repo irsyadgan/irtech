@@ -1,10 +1,16 @@
 <?php
+	session_start();
+?>
+
+<?php
 	// required headers
+	/*
 	header("Access-Control-Allow-Origin: *");
 	header("Content-type: application/x-www-form-urlencoded; charset=UTF-8\r\n" );
 	header("Access-Control-Allow-Methods: POST");
 	header("Access-Control-Max-Age: 3600");
 	header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+	*/
 	
 	include_once '../config/Database.php';
 	include_once '../../object/User.php';
@@ -43,15 +49,13 @@
 			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 				$var_username = $row["username"];
 			}
-			
-			session_start();
 			$_SESSION["uname"] = $var_username;
 			$_SESSION["start"] = time();
 			$_SESSION["expire"] = $_SESSION["start"] + (30 * 60);
-			
 			echo 1;
 		}
 		else {
+			session_destroy();
 			echo 2;
 		}
 	}

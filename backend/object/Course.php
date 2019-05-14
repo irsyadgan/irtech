@@ -22,7 +22,7 @@
 			$this->id = $id;
 		}
 		
-		// check User login
+		// select all course
 		function courseSelectAll(){
 			// select all query
 			$query = "SELECT * FROM " . $this->table_main;

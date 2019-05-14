@@ -1,0 +1,320 @@
+0:00:01.640,0:00:04.320
+Perkenalkan nama saya Muhammad Irsyad Thoyib
+
+0:00:04.320,0:00:06.675
+Pada course kali ini kita akan mempelajari
+
+0:00:06.675,0:00:08.255
+mengenai Arduino
+
+0:00:08.900,0:00:11.640
+Arduino adalah platform elektronik
+
+0:00:11.640,0:00:13.780
+yang menyediakan
+
+0:00:14.320,0:00:15.680
+board
+
+0:00:16.145,0:00:18.805
+mikrokontroler atau bisa disebut juga 
+
+0:00:18.805,0:00:21.565
+sistem minimum yang mengandung mikrokontroler didalamnya
+
+0:00:21.565,0:00:22.635
+dan juga
+
+0:00:23.080,0:00:26.820
+aplikasi berupa Arduino IDE
+
+0:00:26.960,0:00:31.160
+board ini dapat digunakan untuk membaca sensor
+
+0:00:31.400,0:00:33.580
+ataupun menggerakkan aktuator
+
+0:00:34.180,0:00:39.820
+Arduino biasa digunakan pada proyek kecil ataupun menengah
+
+0:00:40.260,0:00:46.020
+seperti membuat mainan atau Robot kecil
+
+0:00:47.200,0:00:50.220
+untuk Arduino IDE sendiri, dia digunakan 
+
+0:00:50.220,0:00:53.220
+untuk memprogram Arduino Board
+
+0:00:53.220,0:00:59.600
+kita bisa menuliskan program disana, kemudian memasukkannya kedalam Board Arduino
+
+0:01:00.960,0:01:02.440
+Selanjutnya
+
+0:01:03.600,0:01:06.260
+Disini ditampilkan 3 board Arduino
+
+0:01:06.260,0:01:09.000
+yang pertama ada Arduino UNO
+
+0:01:09.000,0:01:11.760
+disisi kanan ada Arduino Mega dan
+
+0:01:11.760,0:01:14.280
+dibawah ada Arduino Nano
+
+0:01:14.280,0:01:16.140
+dari ketiga board ini
+
+0:01:17.520,0:01:20.420
+perbedaan yang paling mencolok hanya pada jumlah pin
+
+0:01:21.200,0:01:24.355
+pada Arduino UNO bisa kita lihat disini
+
+0:01:24.355,0:01:27.155
+yang ditulis dengan angka
+
+0:01:27.155,0:01:28.685
+merupakan pin digital
+
+0:01:29.175,0:01:31.845
+pada Arduino UNO terdapat 0 - 13
+
+0:01:31.845,0:01:34.600
+berarti ada 14 pin digital
+
+0:01:35.220,0:01:38.540
+sedangkan pada Arduino Mega
+
+0:01:39.080,0:01:41.280
+terdapat 54 pin
+
+0:01:41.895,0:01:45.015
+sedangkan pada Arduino Nano
+
+0:01:45.015,0:01:48.025
+dia tidak berbeda jauh dengan Arduino UNO
+
+0:01:49.540,0:01:51.980
+Kemudian perbedaan selanjutnya, terdapat
+
+0:01:52.500,0:01:55.660
+pada IC nya, disini sedikit berbeda 
+
+0:01:55.665,0:01:57.840
+baik ukuran maupun jenisnya
+
+0:01:59.105,0:02:01.965
+itu akan dibahas lebih lanjut nanti
+
+0:02:03.365,0:02:06.435
+lanjut, kemudian disini ada contoh dari
+
+0:02:06.440,0:02:08.620
+Arduino IDE
+
+0:02:08.620,0:02:11.200
+disini bisa kita lihat, ada
+
+0:02:11.420,0:02:13.100
+void setup dan void loop
+
+0:02:13.100,0:02:15.080
+maksudnya apa? disini maksudnya adalah 
+
+0:02:15.080,0:02:18.040
+struktur dasar dari program Arduino
+
+0:02:18.040,0:02:19.940
+disini kita bisa menuliskan
+
+0:02:20.440,0:02:22.940
+program-program yang kita inginkan
+
+0:02:22.940,0:02:26.140
+kemudian menguploadnya kedalam
+
+0:02:26.665,0:02:28.325
+board Arduino
+
+0:02:29.625,0:02:32.105
+ya, selanjutnya akan dijelaskan mengenai
+
+0:02:32.105,0:02:34.455
+konten kursus dan juga persyaratan 
+
+0:02:34.455,0:02:37.275
+untuk mengambil course ini
+
+0:02:37.275,0:02:38.275
+yang pertama
+
+0:02:38.400,0:02:42.900
+konten mengenai pengenalan Arduino yang lebih dalam
+
+0:02:43.360,0:02:46.220
+yang sebelumnya hanya overview saja
+
+0:02:46.625,0:02:49.485
+untuk pengenalannya nanti akan dijelaskan mengenai
+
+0:02:49.485,0:02:52.705
+board Arduino, khususnya Arduino UNO
+
+0:02:52.980,0:02:55.060
+dan juga Arduino IDE
+
+0:02:55.060,0:02:58.000
+kemudian, akan dijelaskan
+
+0:02:58.000,0:03:01.300
+dan dipandu dalam instalasi Arduino IDE
+
+0:03:01.860,0:03:04.200
+kemudian, pada konten selanjutnya
+
+0:03:04.200,0:03:07.480
+akan dijelaskan mengenai pemrograman pada Arduino
+
+0:03:07.480,0:03:11.620
+pada pemrograman ini akan dijelaskan struktur dasar dan
+
+0:03:11.780,0:03:14.160
+command-command dasar, tipe data
+
+0:03:15.420,0:03:19.440
+dan segala hal mengenai pemrograman pada Arduino
+
+0:03:20.260,0:03:24.380
+kemudian, kita mulai melakukan pengaplikasian yaitu
+
+0:03:24.660,0:03:28.200
+penerapan Arduino untuk membaca sensor-sensor
+
+0:03:28.200,0:03:30.460
+sensor disini
+
+0:03:30.460,0:03:33.100
+yang digunakan berbagai macam
+
+0:03:33.120,0:03:37.060
+seperti sensor jarak, sensor cahaya, dan lain-lain
+
+0:03:37.260,0:03:40.060
+kemudian konten selanjutnya adalah aktuator
+
+0:03:40.965,0:03:42.535
+nah, setelah data
+
+0:03:43.135,0:03:44.895
+dari sensor kita dapat
+
+0:03:45.295,0:03:48.695
+kita akan menggerakkan aktuator, jadi
+
+0:03:48.840,0:03:53.020
+nanti aktuator bisa berjenis seperti motor DC
+
+0:03:53.840,0:03:54.960
+atau servo
+
+0:03:54.960,0:04:01.740
+jadi misal sensor memiliki atau mendapat data dari lingkungan
+
+0:04:02.280,0:04:08.200
+dalam bentuk jarak, nanti aktuatornya akan bergerak atau melakukan sesuatu
+
+0:04:08.580,0:04:11.440
+kemudian, konten yang terakhir adalah
+
+0:04:11.540,0:04:13.140
+protokol komunikasi
+
+0:04:13.140,0:04:17.640
+protokol komunikasi ini cukup penting, karena beberapa sensor
+
+0:04:17.640,0:04:19.400
+dan juga actuator
+
+0:04:19.400,0:04:23.640
+memerlukan protokol komunikasi untuk bekerja
+
+0:04:24.460,0:04:28.380
+selain itu, protokol komunikasi juga digunakan untuk
+
+0:04:28.380,0:04:30.260
+berkomunikasi antar mikrokontroler
+
+0:04:30.260,0:04:34.220
+jadi, misal kita menggunakan beberapa board Arduino
+
+0:04:34.940,0:04:38.420
+kita bisa menggunakan protokol komunikasi untuk bertukar data
+
+0:04:38.420,0:04:41.500
+antar satu board Arduino dengan board Arduino yang lain
+
+0:04:43.220,0:04:45.900
+selanjutnya ada persyaratan
+
+0:04:46.085,0:04:49.585
+persyaratan untuk mengambil course ini tidak begitu sulit
+
+0:04:49.745,0:04:52.695
+yang pertama adalah pemahaman dasar mengenai
+
+0:04:52.695,0:04:55.105
+bahasa pemrograman C atau C++
+
+0:04:55.520,0:05:01.140
+disini pemahaman dasar mungkin sekadar mencakup
+
+0:05:02.320,0:05:05.560
+sintaks dasar seperti IF,
+
+0:05:05.775,0:05:06.885
+while
+
+0:05:07.280,0:05:08.760
+for
+
+0:05:08.760,0:05:11.440
+dan sintaks-sintaks dasar lainnya
+
+0:05:12.100,0:05:17.940
+untuk object oriented yaitu class mungkin sedikit tambahan saja
+
+0:05:17.940,0:05:22.120
+namun, jika anda belum memahaminya tidak menjadi masalah
+
+0:05:23.240,0:05:25.440
+persyaratan yang kedua adalah pemahaman dasar
+
+0:05:25.440,0:05:27.800
+elektronika dan mikrokontroler
+
+0:05:28.460,0:05:32.440
+karena disini kita melakukan pengaplikasian menggunakan
+
+0:05:32.440,0:05:34.480
+sensor dan aktuator
+
+0:05:34.640,0:05:39.720
+maka kita juga akan merangkai
+
+0:05:39.980,0:05:46.180
+beberapa komponen elektronika seperti resistor, kapasitor, transistor dan lain-lain
+
+0:05:46.380,0:05:49.340
+maka dari itu, pemahaman dasar ini dibutuhkan agar
+
+0:05:49.340,0:05:52.160
+komponen-komponen yang digunakan tidak rusak
+
+0:05:52.840,0:05:55.760
+ya, sekian video kali ini
+
+0:05:55.760,0:05:57.060
+Selamat belajar!

@@ -1,3 +1,17 @@
+<?php
+	session_start();
+	// Check user login or not
+	if(!isset($_SESSION["uname"])){
+		header('Location: login.html');
+	}
+
+	// logout
+	if(isset($_POST['but_logout'])){
+		session_destroy();
+		header('Location: login.html');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
@@ -35,49 +49,7 @@
 </head>
 
 <body>
-	<!-- ================ Start Header Area ================= -->
-  <header class="navigation-header">
-      <div class="navigation-bar">
-        <div class="navigation-brand">
-          <a href="index.html">
-            <img class="logo" src="img/kursus/logo.png" alt="logo"/>
-          </a>
-          <a class="text" href="index.html">
-            <h3 class="text-white font-judul">TeSchool</h3>
-          </a>
-        </div>
-        <div class="navigation-nav">
-          <div class="dropdown">
-            <a class="dropdown-toggle text-white" data-toggle="dropdown">
-                Kategori
-            </a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div> 
-          <a href="index.html">Beranda</a>
-          <a href="index.html">Tentang</a>
-          <a href="courses.html">Kursus</a>
-          <a class="lnr lnr-magnifier navigation-search" id="navigation-search"></a>
-          <a href="login.html">Log In</a>
-          <a href="signup.html">Sign Up</a>
-        </div>
-      </div>
-    </div>
-    <div class="navigation-search-input navigation-search-box" id="navigation-search-input-box">
-      <div class="container">
-        <form class="d-flex justify-content-between">
-          <input type="text" class="form-control" id="navigation-search-input" placeholder="Search Here" />
-          <button type="submit" class="btn"></button>
-          <span class="lnr lnr-cross" id="navigation-close-search" title="Close Search"></span>
-        </form>
-      </div>
-    </div>
-  </header>
-  <!-- ================ End Header Area ================= -->
-	
+
 	<template>
   <!-- ================ start banner Area ================= -->
   <section class="banner-area banner">
@@ -143,15 +115,17 @@
 				
 				<?php
 					include_once 'backend/api/config/Database.php';
-					include_once 'backend/object/Course.php';
+					include_once 'backend/object/User.php';
 					
 					$database = new Database();
 					$db = $database->getConnection();
 					
 					// make sure data not empty
-					$course = new Course($db);
+					$user = new User($db);
+					// set username
+					$user->putDataTwoParam($_SESSION["uname"], "");
 					// select all course
-					$stmt = $course->courseSelectAll();
+					$stmt = $user->userSelectCourse();
 					// Count row
 					$num = $stmt->rowCount();
 						
@@ -177,7 +151,7 @@
 										echo "<p class=\"name\">programming language</p>";
 										echo "<p class=\"value\">$var_price</p>";
 									echo "</div>";
-									echo "<a href=\"course-detail.php?id=$var_id\">";
+									echo "<a href=\"page-video.html\">";
 										echo "<h4>$var_title</h4>";
 									echo "</a>";
 									echo "<div class=\"bottom d-flex mt-15\">";
