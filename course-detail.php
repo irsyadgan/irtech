@@ -54,14 +54,13 @@
                 Kategori
             </a>
             <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="#">Arduino</a>
+              <a href="#">STM32 F4</a>
             </div>
           </div> 
           <a href="index.html">Beranda</a>
           <a href="index.html">Tentang</a>
-          <a href="courses.html">Kursus</a>
+          <a href="mycourses.php">Kursus</a>
           <a class="lnr lnr-magnifier navigation-search" id="navigation-search"></a>
           <a href="login.html">Log In</a>
           <a href="signup.html">Sign Up</a>
@@ -646,6 +645,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script src="js/waypoints.min.js"></script>
   <script src="js/jquery.nice-select.min.js"></script>
   <script src="js/main.js"></script>
+	<script src="js/irsyad.js"></script>
 </body>
 
 </html>

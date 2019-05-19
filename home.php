@@ -82,8 +82,6 @@
           <a href="index.html">Tentang</a>
           <a href="courses.html">Kursus</a>
           <a class="lnr lnr-magnifier navigation-search" id="navigation-search"></a>
-          <a href="login.html">Log In</a>
-          <a href="signup.html">Sign Up</a>
         </div>
       </div>
     </div>
