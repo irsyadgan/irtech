@@ -1,17 +1,4 @@
-<?php
-	session_start();
-	// Check user login or not
-	if(!isset($_SESSION["uname"])){
-		header('Location: login.html');
-	}
-
-	// logout
-	if(isset($_POST['but_logout'])){
-		session_destroy();
-		header('Location: login.html');
-	}
-?>
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
 			<!-- Mobile Specific Meta -->
@@ -56,70 +43,26 @@
 		</head>
     
     <body>
-		<!-- ================ Start Header Area ================= -->
-  <header class="navigation-header">
-      <div class="navigation-bar">
-        <div class="navigation-brand">
-          <a href="index.html">
-            <img class="logo" src="img/kursus/logo.png" alt="logo"/>
-          </a>
-          <a class="text" href="index.html">
-            <h3 class="text-white font-judul">TeSchool</h3>
-          </a>
-        </div>
-        <div class="navigation-nav">
-          <div class="dropdown">
-            <a class="dropdown-toggle text-white" data-toggle="dropdown">
-                Kategori
-            </a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div> 
-          <a href="index.html">Beranda</a>
-          <a href="index.html">Tentang</a>
-          <a href="courses.html">Kursus</a>
-          <a class="lnr lnr-magnifier navigation-search" id="navigation-search"></a>
-        </div>
-      </div>
-    </div>
-    <div class="navigation-search-input navigation-search-box" id="navigation-search-input-box">
-      <div class="container">
-        <form class="d-flex justify-content-between">
-          <input type="text" class="form-control" id="navigation-search-input" placeholder="Search Here" />
-          <button type="submit" class="btn"></button>
-          <span class="lnr lnr-cross" id="navigation-close-search" title="Close Search"></span>
-        </form>
-      </div>
-    </div>
-  </header>
-  <!-- ================ End Header Area ================= -->
+			<!-- ================ Start Header Area ================= -->
+			<?php
+				include_once 'header.php';
+			?>
+			<!-- ================ End Header Area ================= -->
 	
-        <h1>Homepage</h1>
-				<br/>
-        <form method='post' action="">
-					<?php
-						$var_user = $_SESSION["uname"];
-						echo $var_user;
-					?>
-          <input type="submit" value="Logout" name="but_logout">
-        </form>
-				
-				<br/>
-				<div class="course-form-area contact-page-form course-form text-right" id="myForm">
-          <div class="form-group col-md-12" id="message"></div>
-          <?php
-						echo "<div class=\"form-group col-md-12\">";
-							echo "<input type=\"hidden\" class=\"form-control login-form\" id=\"username\" value=\"$var_user\">";
-						echo "</div>";
-					?>
-					<a href="mycourses.php">
-						<div class="col-lg-12 text-center">
-							<button class="login-btn text-uppercase" id="but_submit">My Courses</button>
-						</div>
-					</a>
-        </div>
-    </body>
+			<h1>Homepage</h1>
+			<br/>
+			<?php
+				$var_user = $_SESSION["uname"];
+			?>
+			
+			<br/>
+			<div class="course-form-area contact-page-form course-form text-right" id="myForm">
+				<div class="form-group col-md-12" id="message"></div>
+				<?php
+					echo "<div class=\"form-group col-md-12\">";
+						echo "<input type=\"hidden\" class=\"form-control login-form\" id=\"username\" value=\"$var_user\">";
+					echo "</div>";
+				?>
+			</div>
+	</body>
 </html>

@@ -3,7 +3,7 @@
 	class Database{
 		// specify your own database credentials
 		private $host = "localhost";
-		private $db_name = "webgaje";
+		private $db_name = "teschool";
 		private $username = "root";
 		private $password = "";
 		public $conn;

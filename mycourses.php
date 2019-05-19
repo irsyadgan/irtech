@@ -1,17 +1,3 @@
-<?php
-	session_start();
-	// Check user login or not
-	if(!isset($_SESSION["uname"])){
-		header('Location: login.html');
-	}
-
-	// logout
-	if(isset($_POST['but_logout'])){
-		session_destroy();
-		header('Location: login.html');
-	}
-?>
-
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
@@ -51,98 +37,39 @@
 <body>
 	
 	<!-- ================ Start Header Area ================= -->
-  <header class="navigation-header">
-      <div class="navigation-bar">
-        <div class="navigation-brand">
-          <a href="index.html">
-            <img class="logo" src="img/kursus/logo.png" alt="logo"/>
-          </a>
-          <a class="text" href="index.html">
-            <h3 class="text-white font-judul">TeSchool</h3>
-          </a>
-        </div>
-        <div class="navigation-nav">
-          <div class="dropdown">
-            <a class="dropdown-toggle text-white" data-toggle="dropdown">
-                Kategori
-            </a>
-            <div class="dropdown-content">
-              <a href="#">Arduino</a>
-              <a href="#">STM32 F4</a>
-            </div>
-          </div> 
-          <a href="index.html">Beranda</a>
-          <a href="index.html">Tentang</a>
-          <a href="mycourses.php">Kursus</a>
-          <a class="lnr lnr-magnifier navigation-search" id="navigation-search"></a>
-        </div>
-      </div>
-    </div>
-    <div class="navigation-search-input navigation-search-box" id="navigation-search-input-box">
-      <div class="container">
-        <form class="d-flex justify-content-between">
-          <input type="text" class="form-control" id="navigation-search-input" placeholder="Search Here" />
-          <button type="submit" class="btn"></button>
-          <span class="lnr lnr-cross" id="navigation-close-search" title="Close Search"></span>
-        </form>
-      </div>
-    </div>
-  </header>
+  <?php
+    include_once 'header.php';
+  ?>
   <!-- ================ End Header Area ================= -->
 	
-	<template>
-  <!-- ================ start banner Area ================= -->
-  <section class="banner-area banner">
-    <div class="container">
-      <div class="row justify-content-center align-items-center">
-				
-        <div class="col-lg-12 banner-right">
-          <div class="owl-carousel popuar-course-carusel carousel-course">
-						<div class="single-popular-course">
-							<div class="thumb">
-								<img class="f-img img-fluid mx-auto" src="img/popular-course/p1.jpg" alt="" />
-							</div>
-							<div class="details">
-								<div class="d-flex justify-content-between mb-20">
-									<p class="name">programming language</p>
-									<p class="value">$150</p>
-								</div>
-								<a href="#">
-									<h4>Learn Angular JS Course for Legendary Persons</h4>
-								</a>
-								<div class="bottom d-flex mt-15">
-									<ul class="list">
-										<li>
-											<a href="#"><i class="fa fa-star"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fa fa-star"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fa fa-star"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fa fa-star"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fa fa-star"></i></a>
-										</li>
-									</ul>
-									<p class="ml-20">25 Reviews</p>
-								</div>
-							</div>
-						</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ================ End banner Area ================= -->
-
-</template>
   <!-- ================ Start Popular Course Area ================= -->
   <section class="popular-course-area section-gap popular-background">
     <div class="container-fluid">
+      <div class="banner-left">
+        <div class="title">
+          <h4>Kursus Saya</h4>
+        </div>
+        <div class="select-bar">
+          <table class="pagination">
+            <tr>
+              <td><span class="lnr lnr-screen"></span></td>
+              <td class="selection">Semua Kursus</td>
+            </tr>
+            <tr>
+              <td><span class="lnr lnr-book"></span></td>
+              <td>Koleksi</td>
+            </tr>
+            <tr>
+              <td><span class="lnr lnr-heart"></span></td>
+              <td>Daftar Keinginan</td>
+            </tr>
+            <tr>
+              <td><span class="lnr lnr-briefcase"></span></td>
+              <td>Arsip</td>
+            </tr>
+          </table>
+        </div>
+      </div>
 			<div style="margin-left: 200px;">
 				<div class="row justify-content-center title-position">
 					<div class="col-lg-12">
