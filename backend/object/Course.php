@@ -11,6 +11,7 @@
 		private $image;
 		private $price;
 		private $review;
+		private $search;
 		private $title;
 		
 		// constructor with $db as database connection
@@ -20,6 +21,10 @@
 
 		function putDataOneParamID($id) {
 			$this->id = $id;
+		}
+		
+		function putSearch($search) {
+			$this->search = $search;
 		}
 		
 		// select all course
@@ -43,6 +48,22 @@
 			$this->id=htmlspecialchars(strip_tags($this->id));
 			// bind values
 			$stmt->bindParam(":id", $this->id);
+			// execute query
+			$stmt->execute();
+
+			return $stmt;
+		}
+		
+		function courseSearch(){
+			// select all query
+			$query = "SELECT course_list.course_image_link, course_list.review, course_list.title as tit_main, course_detail.* FROM course_list 
+				INNER JOIN course_detail ON course_list.id=course_detail.id where course_detail.title LIKE '%" . $this->search. "%'";
+			// prepare query statement
+			$stmt = $this->conn->prepare($query);
+			// sanitize
+			//$this->search=htmlspecialchars(strip_tags($this->search));
+			// bind values
+			//$stmt->bindParam(":search", $this->search);
 			// execute query
 			$stmt->execute();
 
